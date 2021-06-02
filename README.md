@@ -1,5 +1,5 @@
 # tex-repo-word-counter
-Tracks the word count of a TeX project with respect to time
+Tracks the word count of a TeX project in a git repository with respect to time
 # Instructions
 1. Set up and activate a virtual environment.
 ```bash

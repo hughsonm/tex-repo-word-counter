@@ -1,5 +1,9 @@
 # Chinta
-Tracks the word count of a TeX project in a git repository with respect to time
+
+"[Chinta](https://en.wikipedia.org/wiki/Chinta_(mentation))" in Hindu philosophy refers to mentation i.e. mental activity, especially thinking.
+
+This tool tracks the word count of a TeX project in a git repository with respect to time
+
 # Instructions
 1. Install `chinta` via pip
 ```bash

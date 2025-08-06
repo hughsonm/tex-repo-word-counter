@@ -27,7 +27,6 @@ def trackTexWordsInRepository(repo,name_of_main_branch):
     counts = []
     dates = []
     for commit in repo.iter_commits(name_of_main_branch):
-        print(f'looking at commit {commit.hexsha}')
         repo.git.checkout(commit.hexsha)
         counts.append(countTexWordsInDirectory(repo.working_tree_dir))
         dates.append(datetime.datetime.fromtimestamp(commit.committed_date))
@@ -44,7 +43,6 @@ def main():
     args = parser.parse_args()
 
     repo = Repo(args.path)
-    print(f'Counting words in {repo.working_tree_dir}')
     counts,dates = trackTexWordsInRepository(repo,args.branch)
 
     plt.figure()

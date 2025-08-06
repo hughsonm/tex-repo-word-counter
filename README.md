@@ -1,21 +1,16 @@
-# tex-repo-word-counter
+# Pupil
 Tracks the word count of a TeX project in a git repository with respect to time
 # Instructions
-1. Set up and activate a virtual environment.
+1. Download code and install `pupil` via pip
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
+git clone git@github.com:hughsonm/tex-repo-word-counter.git
+python3 -m pip install -e ./tex-repo-word-counter
 ```
 
-2. Install dependencies
-```bash
-python3 -m pip install -r requirements.txt
-```
-
-3. Run `count.py` and tell it where to find the repo you want to analyze, as well as the name of the default branch.
+1. Run `pupil` and tell it where to find the repo you want to analyze, as well as the name of the default branch.
 The name of the default branch is probably either `"master"` or `"main"`
 ```bash
-python3 count.py "path/to/repo" "main"
+pupil "path/to/repo" "main"
 ```
 
-4. Look at the cool/depressing graph!
+1. Look at the cool graph!

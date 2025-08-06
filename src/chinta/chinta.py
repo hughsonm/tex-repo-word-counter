@@ -37,7 +37,7 @@ def trackTexWordsInRepository(repo,name_of_main_branch):
 
 def main():
     parser = argparse.ArgumentParser(
-        prog='pupil',
+        prog='chinta',
         description='Tracks word count in a tex repo over time and plots the result')
     parser.add_argument('path', type=str, help='path to the repository whose words you wish to count. Example: /Users/you/thesis')
     parser.add_argument('-b', '--branch', default='main', help='branch whose history you wish to inspect')
